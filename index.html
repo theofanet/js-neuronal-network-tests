@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <canvas id="carCanvas"></canvas>
+    <div class="buttons">
+        <div class="input">
+            <p>NB SENSORS</p>
+            <input id="nbSensors_input" type="number" value="4" />
+        </div>
+        <div class="input">
+            <p>TRAFFIC</p>
+            <textarea id="lanes" rows="5">[[1], [0, 2], [1, 2], [0, 2], [0, 1], [2]]</textarea>
+        </div>
+        <div class="input">
+            <p>NETWORK COUNTS</p>
+            <input id="networkCounts_input" type="text" value="[4, 6, 4]" />
+        </div>
+        <div class="input">
+            <p>NB CARS </p>
+            <input id="nbCars_input" type="number" value="100" />
+        </div>
+        <div class="input">
+            <p>MUTATION AMOUNT </p>
+            <input id="mutationAmount_input" type="number" value="0.1" />
+        </div>
+        <br /><br />
+        <div class="lineBtn">
+            <button onclick="reset()">🔁</button>
+            <button onclick="play()" id="playPause_btn">▶️</button>
+        </div>
+        <button onclick="saveAll(bestCar)">💾</button>
+        <button onclick="discardBrain()">🗑️ 🧠</button>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+    
+    <script src="utils.js"></script>
+    <script src="context.js"></script>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="controls.js"></script>
+    <script src="road.js"></script>
+    <script src="car.js"></script>
+    <script src="traffic.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

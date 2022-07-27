@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.input {
+    padding: 5px 0;
+}
+
+.input p {
+    font-size: 10px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.input input,
+.input textarea {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 7px;
+}
+
+#carCanvas {
+    background: lightgray;
+}
+
+#networkCanvas {
+    background: black;
+}
+
+.laneTemplate {
+    color: white;
+}
+
+.laneTitle, .laneLine {
+    display: flex;
+    padding: 10px;
+}
+
+.laneTitle div, .laneLine div {
+    flex: 1;
+    text-align: center;
+}
+
+div.lineBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+div.lineBtn button {
+    flex: 1;
+}
